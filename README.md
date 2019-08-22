@@ -31,6 +31,7 @@ def cleanup_function():
 my_thread = InfinityThread(target=my_func, interval=2,on_stop_func=cleanup_function,ignore_errors=True)
 my_thread.start()
 #  the thread keeps running like a clock even with errors inside the target function.
+
 my_thread.stop()
 # When the thread stops the `cleanup_function` will be called.
 ```
