@@ -14,6 +14,7 @@ Usage
 Basic Usage
 ``` {.sourceCode .python}
 from infinitythread import InfinityThread
+
 my_thread = InfinityThread(target=my_func, interval=2)
 my_thread.start()
 # Run `my_func` every 2 seconds.
@@ -21,6 +22,7 @@ my_thread.start()
 Advance Usage
 ``` {.sourceCode .python}
 from infinitythread import InfinityThread
+
 def my_func():
     print("I am running in intervals")
     raise Exception("Non affective exception")
