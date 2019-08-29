@@ -17,6 +17,7 @@ class InfinityThread(threading.Thread):
         """
         super().__init__()
         self._stop_event = threading.Event()
+        self.daemon = True
 
         self._interval = interval
         self._target = target
