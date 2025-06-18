@@ -19,7 +19,7 @@ my_thread = InfinityThread(target=my_func, interval=2)
 my_thread.start()
 # Run `my_func` every 2 seconds.
 ```
-Advance Usage
+Advanced Usage
 ```python
 from infinitythread import InfinityThread
 
@@ -43,3 +43,5 @@ Installation
 
 ``` {.sourceCode .bash}
 $ pip install infinitythread
+```
+
